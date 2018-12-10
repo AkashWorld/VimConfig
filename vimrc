@@ -22,3 +22,4 @@ autocmd VimEnter * wincmd p
 let NERDTreeShowHidden = 1
 let NERDTreeMapActivateNode='<right>'
 nmap <leader>n :NerdTreeToggle<CR>
+autocmd VimEnter * TerminalSplit bash

@@ -1,8 +1,12 @@
 execute pathogen#infect()
 filetype on
 syntax on
-colorscheme snazzy
 set guifont=Consolas\ Regular:h14
+colorscheme challenger_deep
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
+let g:lightline = { 'colorscheme': 'challenger_deep'}
 
 filetype indent on
 set nowrap
@@ -28,3 +32,6 @@ nmap <leader>n :NerdTreeToggle<CR>
 
 let g:rainbow_active = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+inoremap <CapsLock> <ESC>
+inoremap jj <ESC>

@@ -24,7 +24,9 @@ set showmatch
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-autocmd VimEnter * TerminalSplit bash
+autocmd VimEnter * set splitbelow
+autocmd VimEnter * term ++rows=12 bash
+autocmd VimEnter * wincmd k
 
 let NERDTreeShowHidden = 1
 let NERDTreeMapActivateNode='<right>'

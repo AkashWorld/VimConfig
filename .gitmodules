@@ -10,9 +10,6 @@
 [submodule "bundle/rainbow"]
     path = bundle/rainbow
     url = https://github.com/luochen1990/rainbow.git
-[submodule "bundle/vim-terminal"]
-    path = bundle/vim-terminal
-    url = https://github.com/tc50cal/vim-terminal.git
 [submodule "bundle/ack.vim"]
     path = bundle/ack.vim
     url = https://github.com/mileszs/ack.vim.git
@@ -25,7 +22,6 @@
 [submodule "bundle/supertab"]
     path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
-
 [submodule "bundle/vim"]
 	path = bundle/vim
 	url = https://github.com/challenger-deep-theme/vim.git

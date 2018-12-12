@@ -2,11 +2,11 @@ execute pathogen#infect()
 filetype on
 syntax on
 set guifont=Consolas\ Regular:h14
-colorscheme challenger_deep
+colorscheme srcery
 if has('nvim') || has('termguicolors')
   set termguicolors
 endif
-let g:lightline = { 'colorscheme': 'challenger_deep'}
+let g:lightline = {'colorscheme': 'srcery',}
 
 filetype indent on
 set nowrap

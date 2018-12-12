@@ -25,3 +25,12 @@
 [submodule "bundle/vim"]
 	path = bundle/vim
 	url = https://github.com/challenger-deep-theme/vim.git
+[submodule "bundle/srcery-vim"]
+	path = bundle/srcery-vim
+	url = https://github.com/srcery-colors/srcery-vim
+[submodule "bundle/--force"]
+	path = bundle/--force
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/rust-lang/rust.vim.git

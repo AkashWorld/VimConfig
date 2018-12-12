@@ -4,7 +4,7 @@ syntax on
 set guifont=Consolas\ Regular:h14
 colorscheme srcery
 if has('nvim') || has('termguicolors')
-  set termguicolors
+    set termguicolors
 endif
 let g:lightline = {'colorscheme': 'srcery',}
 
@@ -35,5 +35,4 @@ nmap <leader>n :NerdTreeToggle<CR>
 let g:rainbow_active = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-inoremap <CapsLock> <ESC>
-inoremap jj <ESC>
+noremap <F3> :Autoformat<CR>

@@ -28,15 +28,15 @@
 [submodule "bundle/srcery-vim"]
 	path = bundle/srcery-vim
 	url = https://github.com/srcery-colors/srcery-vim
-[submodule "bundle/--force"]
-	path = bundle/--force
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "bundle/rust"]
-	path = bundle/rust
-	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
 [submodule "bundle/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/rust.vim"]
+    path = bundle/rust.vim
+    url = https://github.com/rust-lang/rust.vim.git

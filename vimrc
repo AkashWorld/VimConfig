@@ -1,4 +1,7 @@
 execute pathogen#infect()
+set exrc
+set visualbell
+set secure
 filetype on
 syntax on
 set guifont=Consolas\ Regular:h14
@@ -10,10 +13,7 @@ let g:lightline = {'colorscheme': 'srcery',}
 
 filetype indent on
 set nowrap
-set tabstop=4
 set shiftwidth=4
-set softtabstop=4
-set expandtab
 set noshiftround
 set smartindent
 set autoindent
@@ -22,15 +22,12 @@ set hlsearch
 nnoremap <silenc> <Esc> :nohlsearch<Bar>:echo<CR>
 set showmatch
 
-autocmd VimEnter * NERDTree
-autocmd VimEnter * vertical resize -5
-autocmd VimEnter * wincmd p
-autocmd VimEnter * set splitbelow
-autocmd VimEnter * term ++rows=9 bash
-autocmd VimEnter * wincmd k
-
-map <Leader>n <plug>NERDTreeTabs<CR>
 let g:nerdtree_tabs_open_on_console_startup=1
+autocmd VimEnter * :NERDTreeTabsOpen
+autocmd VimEnter * :vertical resize -5
+autocmd VimEnter * :wincmd p
+nmap <leader>n :NERDTreeTabsToggle<CR>
+
 let g:rainbow_active = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
@@ -47,5 +44,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=1
+let g:syntastic_cpp_remove_include_errors=1
 
+"
+" YouCompleteMe options
+"
 
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_register_as_syntastic_checker = 1 "default 1
+let g:Show_diagnostics_ui = 1 "default 1

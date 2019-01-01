@@ -38,20 +38,19 @@ noremap <leader>d <C-]>
 noremap <leader>U :UpdateTags -R<CR>
 noremap <F1> :w<CR>
 noremap <F2> :Errors<CR>
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height=1
-let g:syntastic_cpp_remove_include_errors=1
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_loc_list_height=1
+"let g:syntastic_cpp_remove_include_errors=1
 "
 "
 " YouCompleteMe options
 "
-"
-"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-"let g:ycm_register_as_syntastic_checker = 1 "default 1
-"let g:Show_diagnostics_ui = 1 "default 1
-"let g:ycm_enable_diagnostic_highlighting = 1
-"
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:Show_diagnostics_ui = 1 "default 1
+let g:ycm_enable_diagnostic_highlighting = 1
+

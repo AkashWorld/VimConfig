@@ -1,9 +1,6 @@
 [submodule "bundle/syntax"]
 	path = bundle/syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
-[submodule "bundle/YouCompleteMe"]
-    path = bundle/YouCompleteMe
-    url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/nerdtree"]
     path = bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
@@ -34,12 +31,18 @@
 [submodule "bundle/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "bundle/rust.vim"]
     path = bundle/rust.vim
     url = https://github.com/rust-lang/rust.vim.git
 [submodule "vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim-easytags"]
+	path = bundle/vim-easytags
+	url = https://github.com/xolox/vim-easytags.git
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = https://github.com/xolox/vim-misc
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git

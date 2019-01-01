@@ -29,10 +29,8 @@ autocmd VimEnter * set splitbelow
 autocmd VimEnter * term ++rows=9 bash
 autocmd VimEnter * wincmd k
 
-let NERDTreeShowHidden = 1
-let NERDTreeMapActivateNode='<right>'
-nmap <leader>n :NerdTreeToggle<CR>
-
+map <Leader>n <plug>NERDTreeTabs<CR>
+let g:nerdtree_tabs_open_on_console_startup=1
 let g:rainbow_active = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
@@ -49,3 +47,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height=1
+
+

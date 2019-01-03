@@ -7,9 +7,16 @@ filetype on
 syntax on
 set guifont=Consolas\ Regular:h14
 colorscheme srcery
-let g:lightline = {'colorscheme': 'srcery',}
+let g:lightline = {
+      \ 'colorscheme': 'srcery',
+      \ }
+"color nachtleben
+set laststatus=2
 if has('nvim') || has('termguicolors')
     set termguicolors
+endif
+if !has('gui_running')
+  set t_Co=256
 endif
 hi Normal guibg=NONE ctermbg=NONE
 
@@ -30,15 +37,12 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 noremap <F3> :Autoformat<CR>
 set relativenumber
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 noremap <leader>D <C-T>
 noremap <leader>d <C-]>
 noremap <leader>U :UpdateTags -R<CR>
 noremap <leader>t :tabedit ./
-noremap <leader>T :tabclose
+noremap <leader>T :tabclose<CR>
 noremap <leader>R :so ~/.vimrc<CR>
 noremap <F1> :w<CR>
 noremap <F2> :Errors<CR>

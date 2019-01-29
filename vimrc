@@ -45,7 +45,7 @@ noremap <leader>t :tabedit ./
 noremap <leader>T :tabclose<CR>
 noremap <leader>R :so ~/.vimrc<CR>
 noremap <F1> :Autoformat<CR>
-noremap <F2> :Errors<CR>
+noremap <leader>S :call CurtineIncSw()<CR>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
@@ -68,3 +68,5 @@ let g:ycm_enable_diagnostic_highlighting = 1
 let g:ycm_python_binary_path='/usr/bin/python3'
 
 let g:session_autosave_periodic = 1
+
+

@@ -53,7 +53,7 @@ noremap <leader>t :tabedit ./
 noremap <leader>T :tabclose<CR>
 noremap <leader>R :so ~/.vimrc<CR>
 noremap <F1> :Autoformat<CR>
-noremap <leader>S :call CurtineIncSw()<CR>
+noremap <F2> :call CurtineIncSw()<CR>
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>

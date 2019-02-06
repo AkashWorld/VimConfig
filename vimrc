@@ -20,9 +20,17 @@ if !has('gui_running')
 endif
 hi Normal guibg=NONE ctermbg=NONE
 
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
 filetype indent on
-set nowrap
+set tabstop=8
+set expandtab
 set shiftwidth=4
+set softtabstop=4
+set nowrap
 set noshiftround
 set smartindent
 set autoindent

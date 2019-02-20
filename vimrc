@@ -26,6 +26,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 filetype indent on
+set textwidth=80
 set tabstop=8
 set expandtab
 set shiftwidth=4
@@ -34,11 +35,12 @@ set nowrap
 set noshiftround
 set smartindent
 set autoindent
+set splitright
+set splitbelow
 autocmd BufWritePre * :%s/\s\+$//e
 set hlsearch
 nnoremap <silenc> <Esc> :nohlsearch<Bar>:echo<CR>
 set showmatch
-nmap <leader>n :NERDTreeTabsToggle<CR>
 
 let g:rainbow_active = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -70,6 +72,7 @@ noremap <Right> <Nop>
 " YouCompleteMe options
 "
 
+map <leader>f :YcmCompleter FixIt<CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:Show_diagnostics_ui = 1 "default 1
 let g:ycm_enable_diagnostic_highlighting = 1
